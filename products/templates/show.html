@@ -27,8 +27,9 @@
     <a class="navbar-brand" href="#">
       <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/15778982/2021/10/25/705a529a-97a1-4b60-bdf2-64bab0d151031635184404737ProvogueMenBlackSolidFormalDebys1.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-circle">
     </a>
-      <h class="justify-content-center" style="color: white">SHOE SALES !!!</h>
+      <h class="justify-content-center" style="color: white">SHOE SALE !!!</h>
       <a href="/products" class="btn btn-success">Add shoe</a>
+      <a href="/Admindisplay" class="btn btn-info">Admin view</a>
   </div>
 </nav>
 <div class="container mt-3">
@@ -54,6 +55,9 @@
             <br>
             <br>
             <a href="/delete/{{ shoe.id }}" class="btn btn-outline-danger">Delete</a>
+            <br>
+            <br>
+            <a href="/payment/{{ shoe.id }}" class="btn btn-primary">Checkout</a>
         </td>
       </tr>
       {% endfor %}
